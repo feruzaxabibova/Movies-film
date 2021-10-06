@@ -10,7 +10,7 @@ var renderMovies = function (movie) {
   elNewMovie.querySelector('.js-year').textContent = `Year: ${movie.movie_year}`;
   elNewMovie.querySelector('.js-categories').textContent = movie.Categories.split('|').join(', ');
   elNewMovie.querySelector('.js-link').textContent = `Watch trailer`;
-  elNewMovie.querySelector('.js-link').href = `https://www.youtube.com/watch?v = ${movie.ytid}`;
+  elNewMovie.querySelector('.js-link').href = `https://www.youtube.com/watch?v=${movie.ytid}`;
 
   return elNewMovie;
 };
